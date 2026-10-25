@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Lawn Service | Professional Lawn Care & Landscaping</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Elfsight Live Widget Platform Script -->
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        montserrat: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f2f9f1',
+                            100: '#e1f3e0',
+                            200: '#c3e7bf',
+                            300: '#9ad593',
+                            400: '#8cc63f',
+                            500: '#72bf44',
+                            600: '#3a8027',
+                            700: '#2d611e',
+                            800: '#234a17',
+                            900: '#1a3711',
+                        },
+                        charcoal: {
+                            800: '#383b3e',
+                            900: '#2b2d30',
+                        },
+                        slate: {
+                            25: '#fcfdfd',
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-700 antialiased selection:bg-brand-400 selection:text-white">
+
+    <!-- Vector Logo SVG Definitions -->
+    <svg style="display: none;">
+        <defs>
+            <g id="elite-lawn-logo-mark">
+                <path d="M 12 40 L 12 12 L 88 12 L 88 70" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="square"/>
+                <path d="M 88 88 L 12 88 L 12 60" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="square"/>
+                <text x="50" y="62" text-anchor="middle" font-family="'Montserrat', sans-serif" font-weight="700" font-size="44" fill="currentColor">E</text>
+            </g>
+
+            <g id="elite-tree-mark">
+                <path d="M 45 85 L 45 55 Q 40 50 35 45 L 38 42 Q 43 46 47 50 L 47 85 Z" fill="#2d611e"/>
+                <path d="M 55 85 L 55 55 Q 60 50 65 45 L 62 42 Q 57 46 53 50 L 53 85 Z" fill="#2d611e"/>
+                <path d="M 50 88 C 30 88 15 72 15 52 C 15 36 28 22 44 20 C 48 10 60 5 72 12 C 82 18 88 30 85 42 C 92 48 90 62 82 70 C 78 80 65 88 50 88 Z" fill="#8cc63f"/>
+            </g>
+
+            <g id="elite-grass-mark">
+                <path d="M 5 95 C 10 60 20 20 28 10 C 25 40 22 70 22 95 C 30 50 45 25 50 5 C 48 35 42 70 42 95 C 55 45 70 20 78 15 C 70 45 62 75 62 95 C 75 55 88 35 95 30 C 85 55 80 80 80 95 Z" fill="#72bf44"/>
+            </g>
+        </defs>
+    </svg>
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-brand-700 to-brand-500 text-white text-xs sm:text-sm py-2 px-4 text-center font-medium shadow-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center sm:px-6">
+            <span class="hidden md:inline"><i class="fa-solid fa-snowflake text-sky-200 mr-2"></i>Now scheduling Fall Cleanup and Snow Removal agreements across Hartford & Tolland counties!</span>
+            <span class="md:hidden mx-auto"><i class="fa-solid fa-snowflake mr-1"></i> Now Scheduling Fall Cleanup & Snow Removal</span>
+            <div class="hidden md:flex items-center space-x-4 text-xs">
+                <span><i class="fa-solid fa-phone mr-1"></i> (860) 372-5460</span>
+                <span><i class="fa-solid fa-clock mr-1"></i> Mon - Sat: 7am - 6pm</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 transition-all duration-300 shadow-sm" id="main-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <a href="#" class="flex items-center space-x-3 group focus:outline-none">
+                    <div class="w-11 h-11 sm:w-12 sm:h-12 text-slate-800 transition-transform duration-300 group-hover:scale-105 group-hover:text-brand-600">
+                        <svg class="w-full h-full" viewBox="0 0 100 100">
+                            <use href="#elite-lawn-logo-mark"/>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-montserrat font-extrabold text-xl sm:text-2xl tracking-[0.18em] text-slate-800 leading-none group-hover:text-brand-600 transition-colors">
+                            ELITE LAWN
+                        </span>
+                        <span class="font-montserrat text-[10px] sm:text-xs font-bold tracking-[0.35em] text-slate-600 uppercase mt-1">
+                            SERVICE
+                        </span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center space-x-8 font-medium text-slate-600 text-sm">
+                    <a href="#home" class="hover:text-brand-600 transition-colors py-1 border-b-2 border-transparent hover:border-brand-500">Home</a>
+                    <a href="#services" class="hover:text-brand-600 transition-colors py-1 border-b-2 border-transparent hover:border-brand-500">Services</a>
+                    <a href="#gallery" class="hover:text-brand-600 transition-colors py-1 border-b-2 border-transparent hover:border-brand-500">Gallery</a>
+                    <a href="#reviews" class="hover:text-brand-600 transition-colors py-1 border-b-2 border-transparent hover:border-brand-500">Reviews</a>
+                    <a href="#contact" class="hover:text-brand-600 transition-colors py-1 border-b-2 border-transparent hover:border-brand-500">Contact</a>
+                </nav>
+
+                <div class="hidden sm:flex items-center space-x-4">
+                    <a href="tel:8603725460" class="flex items-center text-slate-700 hover:text-brand-600 font-semibold text-sm transition-colors px-2 py-1">
+                        <div class="w-8 h-8 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center mr-2">
+                            <i class="fa-solid fa-phone text-xs"></i>
+                        </div>
+                        (860) 372-5460
+                    </a>
+                    <a href="#contact" class="bg-brand-500 hover:bg-brand-600 text-white px-5 py-2.5 rounded-full font-semibold text-sm shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5">
+                        Get a Free Quote
+                    </a>
+                </div>
+
+                <div class="flex lg:hidden items-center">
+                    <button id="mobile-menu-btn" type="button" class="p-2 rounded-lg text-slate-600 hover:text-brand-600 hover:bg-slate-100 focus:outline-none" aria-label="Toggle Navigation">
+                        <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 shadow-lg">
+            <a href="#home" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600">Home</a>
+            <a href="#services" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600">Services</a>
+            <a href="#gallery" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600">Gallery</a>
+            <a href="#reviews" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600">Reviews</a>
+            <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-600">Contact</a>
+            <div class="pt-4 border-t border-slate-100 flex flex-col gap-3">
+                <a href="tel:8603725460" class="flex items-center justify-center py-2.5 rounded-lg bg-slate-100 text-slate-800 font-semibold">
+                    <i class="fa-solid fa-phone text-brand-600 mr-2"></i> Call (860) 372-5460
+                </a>
+                <a href="#contact" class="mobile-nav-link text-center bg-brand-500 text-white py-3 rounded-lg font-semibold shadow-md">
+                    Get Free Quote
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative overflow-hidden py-16 lg:py-24 bg-gradient-to-b from-white via-slate-50 to-emerald-50/20">
+        <div class="absolute inset-0 opacity-15 pointer-events-none bg-[radial-gradient(#3a8027_1px,transparent_1px)] [background-size:24px_24px]"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100/70 border border-brand-200 text-brand-800 font-medium text-xs sm:text-sm">
+                        <span class="flex h-2 w-2 rounded-full bg-brand-500 animate-pulse"></span>
+                        <span>Proudly Serving Hartford & Tolland Counties, CT</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-800 tracking-tight leading-[1.15]">
+                        Lush Lawns. <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 via-brand-500 to-emerald-600">
+                            Professional Care.
+                        </span><br>
+                        Unmatched Quality.
+                    </h1>
+
+                    <p class="text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Andrew and the team at Elite Lawn Service deliver pristine, healthy outdoor spaces for residential and commercial properties throughout Hartford and Tolland counties. Reliable, precision-cut lawn care tailored to your home.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto text-center bg-brand-500 hover:bg-brand-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                            <span>Request Fast Estimate</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto text-center bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 font-semibold px-7 py-4 rounded-xl shadow-sm hover:shadow transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-list-check text-brand-600"></i>
+                            <span>Explore Services</span>
+                        </a>
+                    </div>
+
+                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-200/80">
+                        <div class="flex flex-col items-center lg:items-start">
+                            <div class="flex items-center text-slate-800 font-bold text-xl sm:text-2xl">
+                                <i class="fa-solid fa-star text-amber-400 text-base mr-1.5"></i> 5.0
+                            </div>
+                            <span class="text-xs text-slate-500 mt-0.5">Customer Rating</span>
+                        </div>
+                        <div class="flex flex-col items-center lg:items-start">
+                            <div class="text-slate-800 font-bold text-xl sm:text-2xl">100%</div>
+                            <span class="text-xs text-slate-500 mt-0.5">Reliability Guarantee</span>
+                        </div>
+                        <div class="flex flex-col items-center lg:items-start">
+                            <div class="text-slate-800 font-bold text-xl sm:text-2xl">Licensed</div>
+                            <span class="text-xs text-slate-500 mt-0.5">& Fully Insured</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-white">
+                            <img src="andrewtruck.jpg" 
+                                 alt="Andrew with Elite Lawn Service truck and equipment" 
+                                 class="w-full h-[480px] object-cover object-center"
+                                 onerror="this.src='https://placehold.co/800x600/3a8027/ffffff?text=Elite+Lawn+Care'">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-white border-t border-slate-100 relative overflow-hidden">
+        <div class="absolute top-0 right-0 -mr-24 -mt-24 w-96 h-96 bg-brand-50 rounded-full blur-3xl pointer-events-none opacity-60"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-600 font-bold text-sm uppercase tracking-wider bg-brand-50 px-3.5 py-1.5 rounded-full border border-brand-200/60 shadow-sm">What We Offer</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-800 mt-4 tracking-tight">Comprehensive Lawn & Landscape Solutions</h2>
+                <p class="text-slate-600 mt-3 text-base leading-relaxed">From routine weekly mowing to complete land clearing and tree services, Elite Lawn Service keeps your property looking its absolute best.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-gradient-to-b from-white to-slate-50/80 rounded-2xl p-8 border border-slate-200/90 hover:border-brand-400 hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 left-0 right-0 h-1.5 bg-brand-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div>
+                        <div class="w-16 h-16 bg-brand-100/80 rounded-2xl flex items-center justify-center text-brand-600 text-2xl mb-6 group-hover:scale-110 group-hover:bg-brand-500 group-hover:text-white transition-all shadow-inner">
+                            <i class="fa-solid fa-scissors"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600 transition-colors">Lawn Mowing & Care</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Precision cutting, string trimming, hard surface edging, and debris blowing off driveways and walkways included with every single visit.
+                        </p>
+                    </div>
+                    <a href="#contact" onclick="selectServiceInForm('Lawn Mowing')" class="text-brand-700 font-bold text-sm inline-flex items-center group-hover:translate-x-1.5 transition-transform">
+                        Request Quote <i class="fa-solid fa-arrow-right text-xs ml-2"></i>
+                    </a>
+                </div>
+
+                <div class="bg-gradient-to-b from-white to-slate-50/80 rounded-2xl p-8 border border-slate-200/90 hover:border-brand-400 hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 left-0 right-0 h-1.5 bg-brand-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div>
+                        <div class="w-16 h-16 bg-brand-100/80 rounded-2xl flex items-center justify-center text-brand-600 text-2xl mb-6 group-hover:scale-110 group-hover:bg-brand-500 group-hover:text-white transition-all shadow-inner">
+                            <i class="fa-solid fa-tree"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600 transition-colors">Tree & Stump Removal</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Safe removal of dead or hazardous trees, limb trimming, and complete stump grinding to keep your property safe and clear.
+                        </p>
+                    </div>
+                    <a href="#contact" onclick="selectServiceInForm('Tree & Stump Removal')" class="text-brand-700 font-bold text-sm inline-flex items-center group-hover:translate-x-1.5 transition-transform">
+                        Request Quote <i class="fa-solid fa-arrow-right text-xs ml-2"></i>
+                    </a>
+                </div>
+
+                <div class="bg-gradient-to-b from-white to-slate-50/80 rounded-2xl p-8 border border-slate-200/90 hover:border-brand-400 hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 left-0 right-0 h-1.5 bg-brand-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div>
+                        <div class="w-16 h-16 bg-brand-100/80 rounded-2xl flex items-center justify-center text-brand-600 text-2xl mb-6 group-hover:scale-110 group-hover:bg-brand-500 group-hover:text-white transition-all shadow-inner">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600 transition-colors">Landscape Design & Mulch</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Enhance your curb appeal with flowerbed renovation, fresh mulch installation, decorative stone, and sod installation.
+                        </p>
+                    </div>
+                    <a href="#contact" onclick="selectServiceInForm('Landscape Design')" class="text-brand-700 font-bold text-sm inline-flex items-center group-hover:translate-x-1.5 transition-transform">
+                        Request Quote <i class="fa-solid fa-arrow-right text-xs ml-2"></i>
+                    </a>
+                </div>
+
+                <div class="bg-gradient-to-b from-white to-slate-50/80 rounded-2xl p-8 border border-slate-200/90 hover:border-brand-400 hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 left-0 right-0 h-1.5 bg-brand-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div>
+                        <div class="w-16 h-16 bg-brand-100/80 rounded-2xl flex items-center justify-center text-brand-600 text-2xl mb-6 group-hover:scale-110 group-hover:bg-brand-500 group-hover:text-white transition-all shadow-inner">
+                            <i class="fa-solid fa-tractor"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600 transition-colors">Brush Mowing & Clearing</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Heavy-duty clearing for overgrown lots, field brush, thick brambles, and wild vegetation reclamation.
+                        </p>
+                    </div>
+                    <a href="#contact" onclick="selectServiceInForm('Brush Clearing')" class="text-brand-700 font-bold text-sm inline-flex items-center group-hover:translate-x-1.5 transition-transform">
+                        Request Quote <i class="fa-solid fa-arrow-right text-xs ml-2"></i>
+                    </a>
+                </div>
+
+                <div class="bg-gradient-to-b from-white to-slate-50/80 rounded-2xl p-8 border border-slate-200/90 hover:border-brand-400 hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 left-0 right-0 h-1.5 bg-brand-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div>
+                        <div class="w-16 h-16 bg-brand-100/80 rounded-2xl flex items-center justify-center text-brand-600 text-2xl mb-6 group-hover:scale-110 group-hover:bg-brand-500 group-hover:text-white transition-all shadow-inner">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600 transition-colors">Spring & Fall Cleanups</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Thorough removal of fallen leaves, dead twigs, thatch accumulation, and yard prep for changing seasons.
+                        </p>
+                    </div>
+                    <a href="#contact" onclick="selectServiceInForm('Seasonal Cleanups')" class="text-brand-700 font-bold text-sm inline-flex items-center group-hover:translate-x-1.5 transition-transform">
+                        Request Quote <i class="fa-solid fa-arrow-right text-xs ml-2"></i>
+                    </a>
+                </div>
+
+                <div class="bg-gradient-to-b from-white to-slate-50/80 rounded-2xl p-8 border border-slate-200/90 hover:border-brand-400 hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 left-0 right-0 h-1.5 bg-brand-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div>
+                        <div class="w-16 h-16 bg-brand-100/80 rounded-2xl flex items-center justify-center text-brand-600 text-2xl mb-6 group-hover:scale-110 group-hover:bg-brand-500 group-hover:text-white transition-all shadow-inner">
+                            <i class="fa-solid fa-snowflake"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600 transition-colors">Winter Snow Services</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Dependable winter maintenance including driveway plowing, sidewalk clearing, and salting/de-icing.
+                        </p>
+                    </div>
+                    <a href="#contact" onclick="selectServiceInForm('Snow Services')" class="text-brand-700 font-bold text-sm inline-flex items-center group-hover:translate-x-1.5 transition-transform">
+                        Request Quote <i class="fa-solid fa-arrow-right text-xs ml-2"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-24 bg-slate-50 border-t border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-brand-600 font-bold text-sm uppercase tracking-wider bg-brand-100/70 px-3.5 py-1.5 rounded-full border border-brand-200/50">Recent Projects</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-800 mt-4 tracking-tight">Our Work Across Hartford & Tolland Counties</h2>
+                </div>
+                
+                <div class="flex flex-wrap gap-2 mt-6 md:mt-0" id="gallery-filters-container">
+                    <button data-filter="all" class="gallery-filter-btn active bg-brand-500 text-white font-semibold text-xs px-5 py-2.5 rounded-full shadow-md transition-all cursor-pointer">All Projects</button>
+                    <button data-filter="mowing" class="gallery-filter-btn bg-white hover:bg-slate-200 text-slate-700 font-semibold text-xs px-5 py-2.5 rounded-full border border-slate-200 shadow-sm transition-all cursor-pointer">Lawn Mowing</button>
+                    <button data-filter="tree" class="gallery-filter-btn bg-white hover:bg-slate-200 text-slate-700 font-semibold text-xs px-5 py-2.5 rounded-full border border-slate-200 shadow-sm transition-all cursor-pointer">Tree & Stump Removal</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+                
+                <!-- Lawn Mowing Items -->
+                <div class="gallery-item mowing group relative rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200/80">
+                    <img src="Images/LawnMow/IMG_7639.jpg" alt="Backyard Lawn Mowing Pattern" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="text-brand-400 font-bold text-xs uppercase tracking-wider mb-1">Lawn Mowing</span>
+                        <h3 class="text-white font-bold text-lg">Backyard Stripe Pattern</h3>
+                        <span class="text-slate-300 text-xs mt-0.5"><i class="fa-solid fa-location-dot mr-1"></i> Hartford & Tolland Counties, CT</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item mowing group relative rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200/80">
+                    <img src="Images/LawnMow/IMG_7640.jpg" alt="Cross Cut Lawn Stripes" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="text-brand-400 font-bold text-xs uppercase tracking-wider mb-1">Lawn Mowing</span>
+                        <h3 class="text-white font-bold text-lg">Cross-Cut Lawn Mowing</h3>
+                        <span class="text-slate-300 text-xs mt-0.5"><i class="fa-solid fa-location-dot mr-1"></i> Hartford & Tolland Counties, CT</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item mowing group relative rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200/80">
+                    <img src="Images/LawnMow/IMG_9284.jpeg" alt="Front Yard Lawn Care" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="text-brand-400 font-bold text-xs uppercase tracking-wider mb-1">Lawn Mowing</span>
+                        <h3 class="text-white font-bold text-lg">Front Yard Precision Cut</h3>
+                        <span class="text-slate-300 text-xs mt-0.5"><i class="fa-solid fa-location-dot mr-1"></i> Hartford & Tolland Counties, CT</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item mowing group relative rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200/80">
+                    <img src="Images/LawnMow/IMG_9286.jpeg" alt="Side Lawn Mowing Striping" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="text-brand-400 font-bold text-xs uppercase tracking-wider mb-1">Lawn Mowing</span>
+                        <h3 class="text-white font-bold text-lg">Side Yard Striping</h3>
+                        <span class="text-slate-300 text-xs mt-0.5"><i class="fa-solid fa-location-dot mr-1"></i> Hartford & Tolland Counties, CT</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item mowing group relative rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200/80">
+                    <img src="Images/LawnMow/IMG_9557.jpeg" alt="Fence Line Mowing and Trimming" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="text-brand-400 font-bold text-xs uppercase tracking-wider mb-1">Lawn Mowing</span>
+                        <h3 class="text-white font-bold text-lg">Property Line Cut & Trim</h3>
+                        <span class="text-slate-300 text-xs mt-0.5"><i class="fa-solid fa-location-dot mr-1"></i> Hartford & Tolland Counties, CT</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item mowing group relative rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200/80">
+                    <img src="Images/LawnMow/IMG_9633.jpeg" alt="Shaded Backyard Lawn Mowing" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="text-brand-400 font-bold text-xs uppercase tracking-wider mb-1">Lawn Mowing</span>
+                        <h3 class="text-white font-bold text-lg">Shaded Turf Mowing</h3>
+                        <span class="text-slate-300 text-xs mt-0.5"><i class="fa-solid fa-location-dot mr-1"></i> Hartford & Tolland Counties, CT</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item mowing group relative rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200/80">
+                    <img src="Images/LawnMow/IMG_9680.jpeg" alt="Expansive Commercial Mowing Stripes" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="text-brand-400 font-bold text-xs uppercase tracking-wider mb-1">Lawn Mowing</span>
+                        <h3 class="text-white font-bold text-lg">Large Estate Turf Cut</h3>
+                        <span class="text-slate-300 text-xs mt-0.5"><i class="fa-solid fa-location-dot mr-1"></i> Hartford & Tolland Counties, CT</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item mowing group relative rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200/80">
+                    <img src="Images/LawnMow/IMG_9683.jpeg" alt="Hilly Property Lawn Cut" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="text-brand-400 font-bold text-xs uppercase tracking-wider mb-1">Lawn Mowing</span>
+                        <h3 class="text-white font-bold text-lg">Sloped Lawn Mowing</h3>
+                        <span class="text-slate-300 text-xs mt-0.5"><i class="fa-solid fa-location-dot mr-1"></i> Hartford & Tolland Counties, CT</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item mowing group relative rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200/80">
+                    <img src="Images/LawnMow/IMG_9714.jpeg" alt="Commercial Zero-Turn Mowing Equipment" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="text-brand-400 font-bold text-xs uppercase tracking-wider mb-1">Lawn Mowing</span>
+                        <h3 class="text-white font-bold text-lg">Commercial Equipment Mowing</h3>
+                        <span class="text-slate-300 text-xs mt-0.5"><i class="fa-solid fa-location-dot mr-1"></i> Hartford & Tolland Counties, CT</span>
+                    </div>
+                </div>
+
+                <!-- Tree & Stump Removal Items -->
+                <div class="gallery-item tree group relative rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200/80">
+                    <img src="Images/Tree/IMG_9483.jpeg" alt="Overgrown Tree and Brush Before Clearing" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="text-brand-400 font-bold text-xs uppercase tracking-wider mb-1">Tree & Stump Removal</span>
+                        <h3 class="text-white font-bold text-lg">Overgrown Tree & Brush Before Clearing</h3>
+                        <span class="text-slate-300 text-xs mt-0.5"><i class="fa-solid fa-location-dot mr-1"></i> Hartford & Tolland Counties, CT</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item tree group relative rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200/80">
+                    <img src="Images/Tree/IMG_9484.jpeg" alt="Tight-Space Tree Trimming" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="text-brand-400 font-bold text-xs uppercase tracking-wider mb-1">Tree & Stump Removal</span>
+                        <h3 class="text-white font-bold text-lg">Tight-Space Tree Trimming</h3>
+                        <span class="text-slate-300 text-xs mt-0.5"><i class="fa-solid fa-location-dot mr-1"></i> Hartford & Tolland Counties, CT</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item tree group relative rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200/80">
+                    <img src="Images/Tree/IMG_9491.jpeg" alt="Fence Line Cleared Post-Removal" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="text-brand-400 font-bold text-xs uppercase tracking-wider mb-1">Tree & Stump Removal</span>
+                        <h3 class="text-white font-bold text-lg">Fence Line Cleared Post-Removal</h3>
+                        <span class="text-slate-300 text-xs mt-0.5"><i class="fa-solid fa-location-dot mr-1"></i> Hartford & Tolland Counties, CT</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item tree group relative rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200/80">
+                    <img src="Images/Tree/IMG_9495.jpeg" alt="Completed Tree and Stump Removal Project" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="text-brand-400 font-bold text-xs uppercase tracking-wider mb-1">Tree & Stump Removal</span>
+                        <h3 class="text-white font-bold text-lg">Completed Tree & Stump Removal</h3>
+                        <span class="text-slate-300 text-xs mt-0.5"><i class="fa-solid fa-location-dot mr-1"></i> Hartford & Tolland Counties, CT</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Reviews Section (Live Elfsight Widget Integration) -->
+    <section id="reviews" class="py-24 bg-white border-t border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-600 font-bold text-sm uppercase tracking-wider bg-brand-50 px-3.5 py-1.5 rounded-full border border-brand-200/60 shadow-sm">Testimonials</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-800 mt-4 tracking-tight">Live Customer Reviews</h2>
+                <p class="text-slate-600 mt-3 text-base leading-relaxed">Verified reviews synced directly from our Google Business profile.</p>
+            </div>
+
+            <div class="widget-wrapper">
+                <!-- Elfsight Google Reviews Widget -->
+                <div class="elfsight-app-0d8f5caf-7a4c-4118-884c-0e5591353207" data-elfsight-app-lazy></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Free Quote Section -->
+    <section id="contact" class="py-24 bg-white border-t border-slate-200/80 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-brand-600 font-bold text-sm uppercase tracking-wider bg-brand-50 px-3.5 py-1.5 rounded-full border border-brand-200/60 shadow-sm">Contact Andrew</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-800 mt-4 tracking-tight">Ready For A Better Lawn?</h2>
+                        <p class="text-slate-600 mt-3 text-base leading-relaxed">
+                            Get in touch today for a free, no-obligation estimate. Andrew responds promptly to all quote inquiries within 24 hours.
+                        </p>
+                    </div>
+
+                    <div class="space-y-5">
+                        <div class="flex items-start space-x-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/80 shadow-sm hover:border-brand-300 transition-all">
+                            <div class="w-12 h-12 rounded-xl bg-brand-500 text-white flex items-center justify-center text-xl shrink-0 shadow-md">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-base">Direct Phone & Text</h4>
+                                <p class="text-slate-500 text-xs mt-0.5">Call or text anytime for instant response</p>
+                                <a href="tel:8603725460" class="text-brand-700 font-extrabold text-lg hover:underline mt-1 block">(860) 372-5460</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/80 shadow-sm hover:border-brand-300 transition-all">
+                            <div class="w-12 h-12 rounded-xl bg-brand-500 text-white flex items-center justify-center text-xl shrink-0 shadow-md">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-base">Email Inquiries</h4>
+                                <p class="text-slate-500 text-xs mt-0.5">Send property photos or project specs</p>
+                                <a href="mailto:andrew@elitelawncare.com" class="text-brand-700 font-bold text-base hover:underline mt-1 block">andrew@elitelawncare.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/80 shadow-sm hover:border-brand-300 transition-all">
+                            <div class="w-12 h-12 rounded-xl bg-brand-500 text-white flex items-center justify-center text-xl shrink-0 shadow-md">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-base">Primary Service Area</h4>
+                                <p class="text-slate-500 text-xs mt-0.5">Hartford & Tolland Counties, CT</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-charcoal-800 to-charcoal-900 p-6 rounded-2xl text-white shadow-xl flex items-center space-x-4 relative overflow-hidden">
+                        <div class="w-14 h-14 rounded-full bg-brand-500 text-white flex items-center justify-center font-extrabold text-2xl shrink-0 shadow-inner border-2 border-brand-400">
+                            A
+                        </div>
+                        <div class="z-10">
+                            <h4 class="font-bold text-base text-brand-100">Andrew - Owner & Operator</h4>
+                            <p class="text-xs text-slate-300 italic mt-1 leading-relaxed">"I oversee every job personally to make sure your lawn is cut clean and left immaculate."</p>
+                        </div>
+                        <div class="absolute right-2 -bottom-2 w-16 h-16 opacity-20 text-brand-400 pointer-events-none">
+                            <svg class="w-full h-full" viewBox="0 0 100 100">
+                                <use href="#elite-grass-mark"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7" id="quote-form">
+                    <div class="bg-slate-50 rounded-2xl p-8 sm:p-10 border border-slate-200 shadow-xl">
+                        <h3 class="text-2xl font-extrabold text-slate-800 mb-2">Request A Free Quote</h3>
+                        <p class="text-xs text-slate-500 mb-6">Fill out the form below and Andrew will reach out with a custom quote.</p>
+
+                        <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Full Name *</label>
+                                    <input type="text" required placeholder="John Smith" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none text-slate-800 text-sm bg-white shadow-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone Number *</label>
+                                    <input type="tel" required placeholder="(860) 000-0000" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none text-slate-800 text-sm bg-white shadow-sm">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Email Address</label>
+                                    <input type="email" placeholder="john@example.com" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none text-slate-800 text-sm bg-white shadow-sm">
+                                </div>
+                                
+                                <div class="relative">
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Property Street Address *</label>
+                                    <div class="relative">
+                                        <input type="text" id="form-address" required autocomplete="off" placeholder="Start typing address..." class="w-full px-4 py-3.5 pl-10 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none text-slate-800 text-sm bg-white shadow-sm">
+                                        <i class="fa-solid fa-location-dot absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+                                    </div>
+                                    <div id="address-suggestions" class="hidden absolute left-0 right-0 top-full mt-1.5 bg-white rounded-xl border border-slate-200 shadow-2xl z-50 max-h-60 overflow-y-auto divide-y divide-slate-100"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Primary Service Needed</label>
+                                <select id="form-service-select" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none text-slate-800 text-sm bg-white shadow-sm">
+                                    <option value="Lawn Mowing & Care">Lawn Mowing & Regular Maintenance</option>
+                                    <option value="Seasonal Cleanups">Fall Cleanup / Spring Cleanup</option>
+                                    <option value="Snow Services">Winter Snow Removal Agreement</option>
+                                    <option value="Tree & Stump Removal">Tree & Stump Removal</option>
+                                    <option value="Landscape Design">Landscape Design & Mulching</option>
+                                    <option value="Brush Clearing">Brush Mowing / Land Clearing</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Additional Project Details or Notes</label>
+                                <textarea id="form-notes" rows="4" placeholder="Tell us about your yard size, gate access, or specific lawn concerns..." class="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none text-slate-800 text-sm bg-white shadow-sm"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-brand-500 hover:bg-brand-600 text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 text-base transform hover:-translate-y-0.5">
+                                Send Quote Request
+                            </button>
+                        </form>
+
+                        <div id="form-success" class="hidden mt-6 p-5 rounded-xl bg-brand-50 border border-brand-200 text-brand-800 text-center shadow-inner">
+                            <i class="fa-solid fa-circle-check text-3xl text-brand-600 mb-2"></i>
+                            <h4 class="font-bold text-lg">Quote Request Received!</h4>
+                            <p class="text-xs mt-1 text-slate-600">Thank you! Andrew will review your property details and contact you shortly.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-charcoal-800 border-t-4 border-brand-500 pt-16 pb-12 text-slate-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center pb-8 border-b border-slate-700 gap-6">
+                
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 text-white">
+                        <svg class="w-full h-full" viewBox="0 0 100 100">
+                            <use href="#elite-lawn-logo-mark"/>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-montserrat font-extrabold text-xl tracking-[0.18em] text-white leading-none">
+                            ELITE LAWN
+                        </span>
+                        <span class="font-montserrat text-[10px] font-bold tracking-[0.35em] text-slate-400 uppercase mt-1">
+                            SERVICE
+                        </span>
+                    </div>
+                </div>
+
+                <div class="flex space-x-3">
+                    <a href="https://www.facebook.com/profile.php?id=61587846602094" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-slate-700 hover:bg-brand-500 hover:text-white text-slate-300 flex items-center justify-center transition-colors shadow-sm" aria-label="Facebook Profile">
+                        <i class="fa-brands fa-facebook-f text-sm"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-700 hover:bg-brand-500 hover:text-white text-slate-300 flex items-center justify-center transition-colors shadow-sm" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram text-sm"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-700 hover:bg-brand-500 hover:text-white text-slate-300 flex items-center justify-center transition-colors shadow-sm" aria-label="Google">
+                        <i class="fa-brands fa-google text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-400">
+                <p>&copy; <span id="current-year"></span> Elite Lawn Service. All rights reserved. Serving Hartford & Tolland Counties, CT.</p>
+                <div class="flex space-x-6 mt-4 sm:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition-colors">Licensing & Insurance</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+        function selectServiceInForm(serviceName) {
+            const serviceSelect = document.getElementById('form-service-select');
+            for (let i = 0; i < serviceSelect.options.length; i++) {
+                if (serviceSelect.options[i].value.toLowerCase().includes(serviceName.toLowerCase())) {
+                    serviceSelect.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+
+        // --- Gallery Filter Logic ---
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    filterBtns.forEach(b => {
+                        b.classList.remove('active', 'bg-brand-500', 'text-white', 'shadow-md');
+                        b.classList.add('bg-white', 'text-slate-700', 'shadow-sm');
+                    });
+                    
+                    this.classList.add('active', 'bg-brand-500', 'text-white', 'shadow-md');
+                    this.classList.remove('bg-white', 'text-slate-700', 'shadow-sm');
+
+                    const filterValue = this.getAttribute('data-filter');
+
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+
+        // --- Real-Time Address Autocomplete (API Typeahead) ---
+        const addressInput = document.getElementById('form-address');
+        const suggestionsBox = document.getElementById('address-suggestions');
+        let debounceTimer;
+
+        if (addressInput && suggestionsBox) {
+            addressInput.addEventListener('input', function() {
+                clearTimeout(debounceTimer);
+                const query = this.value.trim();
+
+                if (query.length < 3) {
+                    suggestionsBox.innerHTML = '';
+                    suggestionsBox.classList.add('hidden');
+                    return;
+                }
+
+                debounceTimer = setTimeout(() => {
+                    const searchUrl = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&countrycodes=us&limit=6&addressdetails=1`;
+
+                    fetch(searchUrl, {
+                        headers: { 'Accept-Language': 'en-US,en' }
+                    })
+                    .then(res => res.json())
+                    .then(data => {
+                        suggestionsBox.innerHTML = '';
+
+                        if (data && data.length > 0) {
+                            data.forEach(place => {
+                                const item = document.createElement('div');
+                                item.className = 'p-3 hover:bg-brand-50 cursor-pointer text-xs font-medium text-slate-700 flex items-start transition-colors border-b border-slate-100 last:border-0';
+                                
+                                const addr = place.address || {};
+                                const number = addr.house_number || '';
+                                const road = addr.road || addr.pedestrian || addr.suburb || '';
+                                const city = addr.city || addr.town || addr.village || addr.hamlet || '';
+                                const state = addr.state || '';
+                                const postcode = addr.postcode || '';
+
+                                let formattedAddress = place.display_name;
+                                if (road && city) {
+                                    formattedAddress = `${number} ${road}, ${city}, ${state} ${postcode}`.trim().replace(/^,\s*/, '');
+                                }
+
+                                item.innerHTML = `<i class="fa-solid fa-location-dot text-brand-500 mr-2.5 mt-0.5 text-sm shrink-0"></i> <span>${formattedAddress}</span>`;
+                                
+                                item.addEventListener('mousedown', function(e) {
+                                    e.preventDefault();
+                                    addressInput.value = formattedAddress;
+                                    suggestionsBox.classList.add('hidden');
+                                });
+
+                                suggestionsBox.appendChild(item);
+                            });
+                            suggestionsBox.classList.remove('hidden');
+                        } else {
+                            suggestionsBox.classList.add('hidden');
+                        }
+                    })
+                    .catch(() => {
+                        suggestionsBox.classList.add('hidden');
+                    });
+                }, 250);
+            });
+
+            addressInput.addEventListener('blur', function() {
+                setTimeout(() => {
+                    suggestionsBox.classList.add('hidden');
+                }, 200);
+            });
+        }
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const successBox = document.getElementById('form-success');
+            successBox.classList.remove('hidden');
+            event.target.reset();
+            setTimeout(() => {
+                successBox.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
+        }
+    </script>
+</body>
+</html>
